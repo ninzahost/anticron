@@ -1,9 +1,8 @@
 <?php
 /*
 @Version : 3.0
-@Author : Nitish Kumar
+@Author : Nitish Kumar (NinzaHost)
 */
-//cron =>  */10 * * * * php -q /root/anticron.php do > /dev/null 2>&1
 
 @ob_start();
 @error_reporting(0);
@@ -24,12 +23,11 @@ return $replc='0 '.rand(1,12).' * * *';
 $check = array_key_exists("check", $_GET);
 $do = array_key_exists("do", $_GET);
 
-//$chk=array('* * * * *','*/1 * * * *','*/2 * * * *','*/3 * * * *','*/4 * * * *','*/5 * * * *',);
 $chk=array('* * * * *','*/1 * * * *','*/2 * * * *','*/3 * * * *','*/4 * * * *','*/5 * * * *','*/6 * * * *','*/7 * * * *','*/8 * * * *','*/9 * * * *','*/10 * * * *');
 
 
 $c_dir="/var/spool/cron/";
-$arr=array('.', '..','root','asxfwa4','kqh9sgp'); 
+$arr=array('.', '..','root'); 
 
 if($check === true)
 {
